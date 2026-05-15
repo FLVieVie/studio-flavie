@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Studio Flavie · Écrivez-moi, je réponds sous 24h</title>
+<meta name="description" content="Parlons de votre projet. Contactez Studio Flavie par formulaire, email ou téléphone. Réponse garantie sous 24h ouvrées." />
+<meta property="og:title" content="Contact — Studio Flavie" />
+<meta property="og:description" content="Formulaire de contact, coordonnées et réseaux sociaux. Réponse sous 24h." />
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+<link rel="canonical" href="https://studio-flavie.fr/contact.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { cream:'#FBF3E5', ivory:'#F4E8D0', peach:'#F5C3A1', terracotta:'#D67558','terracotta-deep':'#B85838', rust:'#A8482F', sand:'#E0CFB3', bronze:'#B89878', clay:'#C9A98A', mustard:'#E0CFB3', gold:'#B89878', sage:'#B5BFA9','sage-deep':'#8A9784', plum:'#7A5C4C', taupe:'#7A5C4C', ink:'#2A1810','ink-soft':'#5C4434','ink-muted':'#8C7461', rose:'#E89A8F' },
+    fontFamily: { display:['Fraunces','serif'], body:['"DM Sans"','system-ui','sans-serif'] }
+  }}}
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="grain bg-peach text-ink font-body">
+
+<header class="fixed top-0 inset-x-0 z-40 flex justify-center pt-6 px-4">
+  <div class="nav-island rounded-full flex items-center justify-between gap-2 pl-6 pr-2 py-2 w-full max-w-4xl">
+    <a href="index.html" class="font-display text-lg tracking-tight flex items-center gap-2 shrink-0">
+      <span class="w-7 h-7 rounded-full bg-terracotta flex items-center justify-center text-cream font-italic-display text-base">F</span>
+      Studio <span class="font-italic-display">Flavie</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1 text-sm" aria-label="Navigation principale">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="tarifs.html" class="nav-link">Tarifs</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="rendez-vous.html" class="btn-accent text-sm hidden sm:inline-flex">
+      Réserver
+      <span class="icon-wrap"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+    </a>
+    <button id="burger" class="md:hidden w-10 h-10 rounded-full border border-ink/20 flex items-center justify-center" aria-label="Ouvrir le menu"><span class="hamburger"><span></span><span></span><span></span></span></button>
+  </div>
+</header>
+
+<div id="menu-overlay" class="menu-overlay flex items-center justify-center" aria-hidden="true">
+  <nav class="text-center space-y-6">
+    <a href="index.html" class="block font-display text-5xl">Accueil</a>
+    <a href="projets.html" class="block font-display text-5xl italic">Projets</a>
+    <a href="tarifs.html" class="block font-display text-5xl">Tarifs</a>
+    <a href="contact.html" class="block font-display text-5xl italic">Contact</a>
+    <a href="rendez-vous.html" class="block font-display text-5xl">Réserver →</a>
+  </nav>
+</div>
+
+<main>
+
+<!-- HERO + FORM SECTION (PEACH) -->
+<section class="pt-36 pb-24 px-6 relative overflow-hidden bg-peach">
+  <div class="blob top-20 -left-20 w-[420px] h-[420px] opacity-50" data-parallax="0.2" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#D67558" d="M48,-58.5C61.2,-49.4,70.4,-32.8,72.5,-15.7C74.6,1.4,69.7,18.9,60.1,33.4C50.5,47.8,36.3,59.2,19.8,65.5C3.4,71.8,-15.3,73,-29.3,65.2C-43.4,57.3,-52.7,40.5,-59,22.7C-65.3,4.9,-68.5,-13.9,-62.3,-28.8C-56,-43.6,-40.4,-54.5,-24.4,-62.1C-8.5,-69.6,7.7,-73.9,22.6,-71.2C37.5,-68.5,51,-58.9,48,-58.5Z" transform="translate(100 100)"/></svg>
+  </div>
+  <div class="blob -bottom-32 right-0 w-[520px] h-[520px] opacity-40" data-parallax="0.15" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#A8B89E" d="M40,-58C52,-50,62,-37,68,-22C74,-7,76,10,69,24C62,38,46,49,30,57C14,64,-2,68,-18,64C-34,60,-49,49,-58,34C-67,19,-71,0,-67,-16C-63,-32,-50,-46,-35,-54C-19,-62,-2,-65,15,-65C32,-65,48,-66,40,-58Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 relative">
+
+    <!-- Left column : illustration + info -->
+    <div class="md:col-span-5">
+      <div class="reveal">
+        <span class="eyebrow accent"><span class="dot"></span> Contact</span>
+        <h1 class="font-display text-[clamp(3rem,7vw,6.5rem)] leading-[0.95] tracking-[-0.03em] mt-8 word-reveal">
+          Racontez-moi <span class="font-italic-display text-terracotta-deep">votre projet</span>.
+        </h1>
+        <p class="text-lg text-ink-soft mt-8 max-w-md leading-relaxed">
+          Que vous ayez 3 lignes ou 3 pages à m'écrire, je lis chaque message moi-même.
+          Réponse sous 24h ouvrées avec une première réaction et la suite à donner.
+        </p>
+      </div>
+
+      <!-- Decorative illustration -->
+      <div class="mt-12 relative h-64 reveal" style="transition-delay:.1s">
+        <div data-tilt class="absolute top-0 left-0 w-44 h-56 rounded-[2rem] mock-1 shadow-[0_30px_60px_-30px_rgba(42,24,16,0.4)] rotate-[-6deg]">
+          <div class="p-5 h-full flex flex-col justify-between text-cream">
+            <span class="text-[10px] tracking-[0.3em] uppercase opacity-90">Direction</span>
+            <div><div class="font-italic-display text-3xl">Olivia</div></div>
+          </div>
+        </div>
+        <div data-tilt class="absolute top-8 left-32 w-44 h-56 rounded-[2rem] mock-3 shadow-[0_30px_60px_-30px_rgba(42,24,16,0.4)] rotate-[5deg]">
+          <div class="p-5 h-full flex flex-col justify-between text-ink">
+            <span class="text-[10px] tracking-[0.3em] uppercase opacity-70">Carte menu</span>
+            <div><div class="font-display text-2xl">Le<br/>Petit<br/><span class="italic">Sud.</span></div></div>
+          </div>
+        </div>
+        <div data-tilt class="absolute top-20 left-60 w-36 h-44 rounded-[2rem] mock-9 shadow-[0_30px_60px_-30px_rgba(42,24,16,0.4)] rotate-[8deg]">
+          <div class="p-4 h-full flex flex-col justify-between text-cream">
+            <div class="w-8 h-8 rounded-full border border-cream/40 flex items-center justify-center font-italic-display">A</div>
+            <div><div class="font-display text-base">Atelier Aube</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coordonnées -->
+      <div class="mt-16 space-y-3 reveal" style="transition-delay:.15s">
+        <article class="bg-cream rounded-2xl p-5 flex items-center gap-5">
+          <div class="icon-wrap-anim bg-terracotta text-cream shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-[0.2em] text-ink-muted">Email</div>
+            <a href="mailto:bonjour@studio-flavie.fr" class="font-display text-xl link-anim">bonjour@studio-flavie.fr</a>
+          </div>
+        </article>
+        <article class="bg-cream rounded-2xl p-5 flex items-center gap-5">
+          <div class="icon-wrap-anim bg-mustard shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-[0.2em] text-ink-muted">Téléphone</div>
+            <a href="tel:+33612345678" class="font-display text-xl link-anim">+33 6 12 34 56 78</a>
+          </div>
+        </article>
+        <article class="bg-cream rounded-2xl p-5 flex items-center gap-5">
+          <div class="icon-wrap-anim bg-sage shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-[0.2em] text-ink-muted">Atelier</div>
+            <div class="font-display text-xl">Paris XIᵉ · Travail à distance</div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Response time pill -->
+      <div class="mt-10 inline-flex items-center gap-3 px-5 py-3 rounded-full bg-ink text-cream reveal">
+        <span class="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
+        <span class="text-sm">Réponse garantie sous 24h ouvrées</span>
+      </div>
+
+      <!-- Socials -->
+      <div class="mt-10 reveal">
+        <div class="text-xs uppercase tracking-[0.25em] text-ink-muted mb-4">Suivez l'atelier</div>
+        <div class="flex flex-wrap gap-3">
+          <a href="#" class="bg-cream px-4 py-2.5 rounded-full text-sm flex items-center gap-2 hover:bg-ink hover:text-cream transition"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> Instagram</a>
+          <a href="#" class="bg-cream px-4 py-2.5 rounded-full text-sm flex items-center gap-2 hover:bg-ink hover:text-cream transition"><span class="font-bold">Bē</span> Behance</a>
+          <a href="#" class="bg-cream px-4 py-2.5 rounded-full text-sm flex items-center gap-2 hover:bg-ink hover:text-cream transition"><span class="font-bold">in</span> LinkedIn</a>
+          <a href="#" class="bg-cream px-4 py-2.5 rounded-full text-sm flex items-center gap-2 hover:bg-ink hover:text-cream transition"><span class="font-bold">P</span> Pinterest</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column : form -->
+    <div class="md:col-span-7 reveal" style="transition-delay:.15s">
+      <article class="bg-cream rounded-[2rem] p-8 md:p-12 shadow-[0_30px_80px_-40px_rgba(42,24,16,0.3)]">
+        <div class="flex items-center justify-between mb-8">
+          <span class="eyebrow accent"><span class="dot"></span> Formulaire</span>
+          <span class="text-xs uppercase tracking-[0.2em] text-ink-muted">5 min max</span>
+        </div>
+
+        <form data-mock class="space-y-7">
+          <div class="grid md:grid-cols-2 gap-6">
+            <label class="block">
+              <span class="field-label block mb-1">Prénom &amp; nom</span>
+              <input type="text" required class="field" placeholder="Camille Bertin">
+            </label>
+            <label class="block">
+              <span class="field-label block mb-1">Email</span>
+              <input type="email" required class="field" placeholder="camille@maison-olivia.fr">
+            </label>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <label class="block">
+              <span class="field-label block mb-1">Entreprise</span>
+              <input type="text" class="field" placeholder="Olivia Boulangerie">
+            </label>
+            <label class="block">
+              <span class="field-label block mb-1">Type de projet</span>
+              <select required class="field">
+                <option value="" disabled selected>Choisissez —</option>
+                <option>Logo seul</option>
+                <option>Identité visuelle complète</option>
+                <option>Sur-mesure (identité + supports print)</option>
+                <option>Carte de menu / supports print</option>
+                <option>Mockups / direction artistique ponctuelle</option>
+                <option>Je ne sais pas encore, on en parle</option>
+              </select>
+            </label>
+          </div>
+
+          <fieldset>
+            <legend class="field-label block mb-2">Budget estimé</legend>
+            <div class="flex flex-wrap gap-2">
+              <label class="chip cursor-pointer"><input type="radio" name="budget" class="sr-only">— 1 000 €</label>
+              <label class="chip cursor-pointer"><input type="radio" name="budget" class="sr-only">1 000 — 2 500 €</label>
+              <label class="chip cursor-pointer"><input type="radio" name="budget" class="sr-only">2 500 — 5 000 €</label>
+              <label class="chip cursor-pointer"><input type="radio" name="budget" class="sr-only">5 000 — 10 000 €</label>
+              <label class="chip cursor-pointer"><input type="radio" name="budget" class="sr-only">+ 10 000 €</label>
+              <label class="chip cursor-pointer"><input type="radio" name="budget" class="sr-only">Je ne sais pas</label>
+            </div>
+          </fieldset>
+
+          <label class="block">
+            <span class="field-label block mb-1">Votre message</span>
+            <textarea required class="field" rows="5" placeholder="Quelques mots sur votre activité, où vous en êtes, ce qui vous freine aujourd'hui, et ce que vous aimeriez voir changer."></textarea>
+          </label>
+
+          <label class="flex items-start gap-3 cursor-pointer">
+            <input type="checkbox" class="mt-1.5">
+            <span class="text-xs text-ink-soft">J'accepte que mes données soient traitées pour le suivi de cette demande, dans le respect du RGPD. Aucune utilisation marketing.</span>
+          </label>
+
+          <div class="flex flex-col sm:flex-row gap-4 sm:items-center pt-4">
+            <button type="submit" class="btn-accent">
+              Envoyer le message
+              <span class="icon-wrap"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+            </button>
+            <span class="text-sm text-ink-soft">ou <a href="rendez-vous.html" class="link-anim text-ink">réservez directement un appel</a></span>
+          </div>
+
+          <div data-feedback class="hidden mt-4 p-4 rounded-2xl bg-sage/30 text-ink text-sm border border-sage"></div>
+        </form>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHILE YOU WAIT -->
+<section class="py-24 px-6 bg-cream relative overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10 items-end reveal">
+      <div class="md:col-span-7">
+        <span class="eyebrow accent"><span class="dot"></span> En attendant ma réponse</span>
+        <h2 class="font-display text-5xl md:text-6xl mt-6 leading-[1] word-reveal">Pas pressé·e ? Allez voir <span class="font-italic-display text-terracotta-deep">ça</span>.</h2>
+      </div>
+      <p class="md:col-span-5 text-ink-soft">Trois ressources utiles pour préparer un brief béton ou vous projeter avant qu'on se parle.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-4 mt-12 reveal-stagger">
+      <a href="projets.html" data-tilt class="card bg-peach group">
+        <div class="h-32 rounded-2xl mock-1 mb-6"></div>
+        <span class="text-xs uppercase tracking-[0.25em] text-terracotta-deep">Portfolio</span>
+        <h3 class="font-display text-2xl mt-2 leading-tight">12 études de cas commentées</h3>
+        <p class="text-ink-soft text-sm mt-2">Avant / après, brief, résultats chiffrés.</p>
+        <span class="text-sm font-medium mt-6 inline-flex items-center gap-2">Voir <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+      </a>
+      <a href="tarifs.html" data-tilt class="card bg-sage group">
+        <div class="h-32 rounded-2xl mock-4 mb-6"></div>
+        <span class="text-xs uppercase tracking-[0.25em] text-ink">Tarifs</span>
+        <h3 class="font-display text-2xl mt-2 leading-tight">Grille tarifaire transparente</h3>
+        <p class="text-ink-soft text-sm mt-2">Trois formules, comparatif détaillé, FAQ.</p>
+        <span class="text-sm font-medium mt-6 inline-flex items-center gap-2">Voir <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+      </a>
+      <a href="rendez-vous.html" data-tilt class="card bg-mustard group">
+        <div class="h-32 rounded-2xl mock-6 mb-6"></div>
+        <span class="text-xs uppercase tracking-[0.25em] text-ink">Appel découverte</span>
+        <h3 class="font-display text-2xl mt-2 leading-tight">30 minutes, 100 % gratuit</h3>
+        <p class="text-ink-soft text-sm mt-2">On regarde si on est faits pour travailler ensemble.</p>
+        <span class="text-sm font-medium mt-6 inline-flex items-center gap-2">Réserver <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-ink text-cream pt-24 pb-10 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10 pb-16 border-b border-cream/10">
+      <div class="md:col-span-5"><h2 class="font-display text-5xl md:text-6xl leading-tight">Studio <span class="font-italic-display text-peach">Flavie</span></h2><p class="text-cream/70 mt-4 max-w-sm">Identités visuelles pour entrepreneurs, restaurateurs et créateur·ices qui veulent qu'on les remarque pour les bonnes raisons.</p></div>
+      <div class="md:col-span-3"><div class="text-xs uppercase tracking-[0.25em] text-cream/40 mb-4">Naviguer</div><ul class="space-y-2"><li><a href="index.html" class="link-anim">Accueil</a></li><li><a href="projets.html" class="link-anim">Projets</a></li><li><a href="tarifs.html" class="link-anim">Tarifs</a></li><li><a href="contact.html" class="link-anim">Contact</a></li><li><a href="rendez-vous.html" class="link-anim">Réserver</a></li></ul></div>
+      <div class="md:col-span-4"><div class="text-xs uppercase tracking-[0.25em] text-cream/40 mb-4">Contact</div><ul class="space-y-2"><li><a href="mailto:bonjour@studio-flavie.fr" class="link-anim">bonjour@studio-flavie.fr</a></li><li><a href="tel:+33612345678" class="link-anim">+33 6 12 34 56 78</a></li><li class="text-cream/60">Paris, France · Travail à distance</li></ul>
+        <div class="flex gap-3 mt-6">
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Behance"><span class="text-xs font-bold">Bē</span></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="LinkedIn"><span class="text-xs font-bold">in</span></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Pinterest"><span class="text-xs font-bold">P</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-cream/50"><div>© <span data-year></span> Studio Flavie · Tous droits réservés.</div><div class="flex gap-6"><a href="#" class="link-anim">Mentions légales</a><a href="#" class="link-anim">Politique de confidentialité</a></div></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

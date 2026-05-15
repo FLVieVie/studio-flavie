@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Studio Flavie — Identités visuelles qui attirent les bons clients</title>
+<meta name="description" content="Studio Flavie, graphiste freelance experte en identité visuelle. J'aide entrepreneurs, restaurateurs et PME à construire des marques chaleureuses qui attirent plus de clients." />
+<meta name="keywords" content="graphiste freelance, identité visuelle, logo, charte graphique, branding, direction artistique" />
+<meta name="author" content="Studio Flavie" />
+<meta property="og:title" content="Studio Flavie — Identités visuelles qui attirent les bons clients" />
+<meta property="og:description" content="Graphiste freelance experte en identité visuelle. Marques chaleureuses, stratégiques, qui convertissent." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+<link rel="canonical" href="https://studio-flavie.fr/" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { cream:'#FBF3E5', ivory:'#F4E8D0', peach:'#F5C3A1', terracotta:'#D67558','terracotta-deep':'#B85838', rust:'#A8482F', sand:'#E0CFB3', bronze:'#B89878', clay:'#C9A98A', mustard:'#E0CFB3', gold:'#B89878', sage:'#B5BFA9','sage-deep':'#8A9784', plum:'#7A5C4C', taupe:'#7A5C4C', ink:'#2A1810','ink-soft':'#5C4434','ink-muted':'#8C7461', rose:'#E89A8F' },
+    fontFamily: { display:['Fraunces','serif'], body:['"DM Sans"','system-ui','sans-serif'] }
+  }}}
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Schema.org : ProfessionalService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Studio Flavie",
+  "description": "Graphiste freelance spécialisée en identité visuelle pour entrepreneurs, PME et restaurateurs.",
+  "image": "https://studio-flavie.fr/assets/img/favicon.svg",
+  "url": "https://studio-flavie.fr",
+  "telephone": "+33-6-12-34-56-78",
+  "email": "bonjour@studio-flavie.fr",
+  "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
+  "priceRange": "€€",
+  "areaServed": "France"
+}
+</script>
+</head>
+<body class="grain bg-cream text-ink font-body">
+
+<!-- ============== INTRO LOADER ============== -->
+<div id="intro" aria-hidden="true">
+  <div class="intro-mark">F</div>
+  <h1 class="intro-title">
+    <span>Studio</span><span>Flavie</span>
+  </h1>
+</div>
+
+<!-- ============== NAVIGATION ============== -->
+<header class="fixed top-0 inset-x-0 z-40 flex justify-center pt-6 px-4">
+  <div class="nav-island rounded-full flex items-center justify-between gap-2 pl-6 pr-2 py-2 w-full max-w-4xl">
+    <a href="index.html" class="font-display text-lg tracking-tight flex items-center gap-2 shrink-0">
+      <span class="w-7 h-7 rounded-full bg-terracotta flex items-center justify-center text-cream font-italic-display text-base">F</span>
+      Studio <span class="font-italic-display">Flavie</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1 text-sm" aria-label="Navigation principale">
+      <a href="index.html" class="nav-link active">Accueil</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="tarifs.html" class="nav-link">Tarifs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="rendez-vous.html" class="btn-accent text-sm hidden sm:inline-flex">
+      Réserver
+      <span class="icon-wrap"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+    </a>
+    <button id="burger" class="md:hidden w-10 h-10 rounded-full border border-ink/20 flex items-center justify-center" aria-label="Ouvrir le menu">
+      <span class="hamburger"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============== MOBILE MENU ============== -->
+<div id="menu-overlay" class="menu-overlay flex items-center justify-center" aria-hidden="true">
+  <nav class="text-center space-y-6">
+    <a href="index.html" class="block font-display text-5xl">Accueil</a>
+    <a href="projets.html" class="block font-display text-5xl italic">Projets</a>
+    <a href="tarifs.html" class="block font-display text-5xl">Tarifs</a>
+    <a href="contact.html" class="block font-display text-5xl italic">Contact</a>
+    <a href="rendez-vous.html" class="block font-display text-5xl">Réserver →</a>
+  </nav>
+</div>
+
+<main>
+
+<!-- ============== HERO ============== -->
+<section class="relative pt-36 pb-20 md:pt-44 md:pb-32 px-6 overflow-hidden bg-mist">
+  <!-- Decorative blobs -->
+  <div class="blob top-20 -left-32 w-[520px] h-[520px] opacity-70" data-parallax="0.15" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#F5C3A1" d="M48,-58.5C61.2,-49.4,70.4,-32.8,72.5,-15.7C74.6,1.4,69.7,18.9,60.1,33.4C50.5,47.8,36.3,59.2,19.8,65.5C3.4,71.8,-15.3,73,-29.3,65.2C-43.4,57.3,-52.7,40.5,-59,22.7C-65.3,4.9,-68.5,-13.9,-62.3,-28.8C-56,-43.6,-40.4,-54.5,-24.4,-62.1C-8.5,-69.6,7.7,-73.9,22.6,-71.2C37.5,-68.5,51,-58.9,48,-58.5Z" transform="translate(100 100)"/></svg>
+  </div>
+  <div class="blob bottom-0 right-0 w-[420px] h-[420px] opacity-60" data-parallax="0.2" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#E5B85C" d="M40.6,-62.3C52.9,-51.7,63.3,-39.6,68.6,-25.7C74,-11.8,74.2,3.9,69.3,17.8C64.5,31.7,54.6,43.8,42.3,55.2C30,66.6,15,77.3,-1.4,79.3C-17.8,81.2,-35.7,74.4,-46.8,62.2C-58,50,-62.4,32.4,-65.1,15.5C-67.7,-1.5,-68.6,-17.8,-62,-30.9C-55.3,-44,-41.2,-53.9,-26.8,-63.2C-12.4,-72.5,2.3,-81.1,16.5,-79.5C30.7,-77.9,41.6,-66.1,40.6,-62.3Z" transform="translate(100 100)"/></svg>
+  </div>
+  <div class="blob top-40 right-1/3 w-[260px] h-[260px] opacity-50" data-parallax="0.4" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#A8B89E" d="M44.7,-65.7C56.9,-58.4,65.1,-43.6,69.6,-28.4C74.1,-13.1,75,2.7,71.1,17.7C67.2,32.7,58.5,46.9,46.1,57.1C33.6,67.3,17.3,73.6,1.2,72C-14.8,70.4,-29.6,60.9,-43.6,50C-57.5,39,-70.6,26.6,-75,11.2C-79.5,-4.3,-75.4,-22.8,-65.6,-37.1C-55.7,-51.5,-40.1,-61.8,-24.7,-67.8C-9.3,-73.8,5.9,-75.5,20.5,-73.1C35,-70.6,48.9,-64.1,44.7,-65.7Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative">
+    <div class="grid md:grid-cols-12 gap-12 items-end">
+      <div class="md:col-span-7">
+        <span class="eyebrow accent"><span class="dot"></span> Graphiste freelance · Paris &amp; remote</span>
+        <h1 class="font-display text-[clamp(3rem,8.5vw,8rem)] leading-[0.93] tracking-[-0.04em] mt-8 word-reveal">
+          L'image qui fait grandir <span class="font-italic-display text-terracotta-deep">votre marque</span>.
+        </h1>
+        <p class="mt-8 max-w-xl text-lg text-ink-soft leading-relaxed reveal">
+          Je m'appelle Flavie — graphiste obsédée par les marques qui osent.
+          Je dessine des identités visuelles chaleureuses, stratégiques et cohérentes
+          pour les entrepreneurs, PME et restaurateurs qui veulent enfin
+          attirer les bons clients, sans crier plus fort que les autres.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-3 items-center reveal">
+          <a href="rendez-vous.html" class="btn-primary">
+            Réserver un appel
+            <span class="icon-wrap"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          </a>
+          <a href="projets.html" class="btn-outline text-ink">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M5 4.5l4 2.5-4 2.5z" fill="currentColor"/></svg>
+            Voir les projets
+          </a>
+        </div>
+        <div class="mt-10 flex items-center gap-4 reveal">
+          <div class="flex -space-x-2">
+            <div class="w-8 h-8 rounded-full bg-peach border-2 border-cream"></div>
+            <div class="w-8 h-8 rounded-full bg-mustard border-2 border-cream"></div>
+            <div class="w-8 h-8 rounded-full bg-sage border-2 border-cream"></div>
+            <div class="w-8 h-8 rounded-full bg-plum border-2 border-cream"></div>
+          </div>
+          <span class="text-sm text-ink-soft"><strong class="text-ink">42 marques</strong> habillées en 2025 · ★★★★★ Notation client</span>
+        </div>
+      </div>
+
+      <!-- Visual stack -->
+      <div class="md:col-span-5 relative h-[500px] md:h-[600px] reveal">
+        <div data-tilt class="absolute top-0 right-0 w-64 h-80 rounded-[2rem] mock-1 shadow-[0_30px_80px_-30px_rgba(42,24,16,0.4)] rotate-[6deg]">
+          <div class="p-6 h-full flex flex-col justify-between text-cream">
+            <span class="text-[10px] tracking-[0.3em] uppercase">N°01 — Logo</span>
+            <div>
+              <div class="font-italic-display text-5xl">Olivia</div>
+              <div class="text-xs opacity-80 mt-1 tracking-[0.15em] uppercase">Boulangerie</div>
+            </div>
+          </div>
+        </div>
+        <div data-tilt class="absolute top-32 left-0 w-72 h-96 rounded-[2rem] mock-7 shadow-[0_30px_80px_-30px_rgba(42,24,16,0.4)] -rotate-[5deg]">
+          <div class="p-7 h-full flex flex-col justify-between text-ink">
+            <span class="text-[10px] tracking-[0.3em] uppercase opacity-70">N°02 — Carte menu</span>
+            <div>
+              <div class="font-display text-4xl leading-tight">Le<br/>Petit<br/><span class="italic">Sud.</span></div>
+              <div class="text-xs mt-3 tracking-[0.15em] uppercase opacity-70">Restaurant méditerranéen</div>
+            </div>
+          </div>
+        </div>
+        <div data-tilt class="absolute bottom-0 right-4 w-56 h-64 rounded-[2rem] mock-9 shadow-[0_30px_80px_-30px_rgba(42,24,16,0.4)] rotate-[8deg]">
+          <div class="p-5 h-full flex flex-col justify-between text-cream">
+            <div class="w-12 h-12 rounded-full border-2 border-cream/40 flex items-center justify-center font-italic-display text-2xl">A</div>
+            <div>
+              <div class="font-display text-2xl">Atelier Aube</div>
+              <div class="text-[10px] uppercase tracking-[0.25em] opacity-70 mt-2">Cosmétique</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-20 flex items-center justify-between text-xs uppercase tracking-[0.25em] text-ink-muted reveal">
+      <span class="flex items-center gap-3"><span class="w-8 h-px bg-ink-muted"></span>Faites défiler pour découvrir</span>
+      <span class="flex items-center gap-2">Disponible — Mars 2026 <span class="w-2 h-2 rounded-full bg-sage-deep animate-pulse"></span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== MARQUEE BAND ============== -->
+<section class="bg-terracotta py-6 overflow-hidden text-cream">
+  <div class="marquee-track text-3xl md:text-4xl font-display">
+    <span class="px-2">Identité visuelle</span><span>✦</span>
+    <span class="px-2 italic">Logos &amp; système graphique</span><span>✦</span>
+    <span class="px-2">Charte</span><span>✦</span>
+    <span class="px-2 italic">Direction artistique</span><span>✦</span>
+    <span class="px-2">Cartes de menu</span><span>✦</span>
+    <span class="px-2 italic">Affiches</span><span>✦</span>
+    <span class="px-2">Mockups</span><span>✦</span>
+  </div>
+</section>
+
+<!-- ============== POURQUOI / BÉNÉFICES (SAGE BG) ============== -->
+<section class="bg-sage py-24 md:py-32 px-6 relative overflow-hidden">
+  <div class="blob -top-32 -right-20 w-[500px] h-[500px] opacity-60" data-parallax="0.15" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#FBF3E5" d="M44.7,-65.7C56.9,-58.4,65.1,-43.6,69.6,-28.4C74.1,-13.1,75,2.7,71.1,17.7C67.2,32.7,58.5,46.9,46.1,57.1C33.6,67.3,17.3,73.6,1.2,72C-14.8,70.4,-29.6,60.9,-43.6,50C-57.5,39,-70.6,26.6,-75,11.2C-79.5,-4.3,-75.4,-22.8,-65.6,-37.1C-55.7,-51.5,-40.1,-61.8,-24.7,-67.8C-9.3,-73.8,5.9,-75.5,20.5,-73.1C35,-70.6,48.9,-64.1,44.7,-65.7Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative">
+    <div class="grid md:grid-cols-12 gap-10 items-end mb-16">
+      <div class="md:col-span-7 reveal">
+        <span class="eyebrow accent"><span class="dot"></span> Pourquoi une identité visuelle ?</span>
+        <h2 class="font-display text-5xl md:text-7xl mt-6 leading-[1] word-reveal">
+          Un logo, c'est joli. Une <span class="font-italic-display text-rust">identité</span>, ça <span class="font-italic-display">vend</span>.
+        </h2>
+      </div>
+      <p class="md:col-span-5 text-ink-soft text-lg reveal">
+        85 % des consommateurs choisissent une marque selon son apparence avant son prix.
+        Une image faible vous fait travailler deux fois plus pour deux fois moins.
+        Voilà ce qu'une identité pensée change pour vous.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 reveal-stagger">
+      <article class="card bg-cream">
+        <div class="icon-wrap-anim mb-6 bg-terracotta text-cream">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6m0 0l-3-3m3 3l3-3M3 16a9 9 0 0018 0"/></svg>
+        </div>
+        <span class="font-display text-3xl text-terracotta">01</span>
+        <h3 class="font-display text-2xl leading-tight mt-3">Attirer les bons clients, plus souvent</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Une image professionnelle agit comme un filtre : elle parle directement à votre clientèle idéale et écarte naturellement les demandes hors cible.</p>
+      </article>
+
+      <article class="card bg-cream">
+        <div class="icon-wrap-anim mb-6 bg-mustard">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M12 3v18M6 6l12 12M18 6L6 18"/></svg>
+        </div>
+        <span class="font-display text-3xl text-terracotta">02</span>
+        <h3 class="font-display text-2xl leading-tight mt-3">Se démarquer dans un marché saturé</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Sur un linéaire ou un fil Instagram, vous avez 3 secondes. Une direction artistique forte, c'est ce qui fait qu'on s'arrête sur vous.</p>
+      </article>
+
+      <article class="card bg-cream">
+        <div class="icon-wrap-anim mb-6 bg-plum text-cream">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+        </div>
+        <span class="font-display text-3xl text-terracotta">03</span>
+        <h3 class="font-display text-2xl leading-tight mt-3">Gagner en crédibilité et confiance</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Une marque cohérente envoie un message clair : vous prenez votre métier au sérieux. Vos prospects acceptent vos tarifs plus facilement.</p>
+      </article>
+
+      <article class="card bg-peach">
+        <div class="icon-wrap-anim mb-6 bg-cream">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg>
+        </div>
+        <span class="font-display text-3xl text-rust">04</span>
+        <h3 class="font-display text-2xl leading-tight mt-3">Cohérence sur tous vos supports</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Carte de visite, site, vitrine, packaging, Instagram. Tout parle d'une seule voix. Plus de bricolage Canva à 23h le dimanche.</p>
+      </article>
+
+      <article class="card bg-mustard">
+        <div class="icon-wrap-anim mb-6 bg-cream">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L4 6v8c0 5 4 9 8 10 4-1 8-5 8-10V6l-8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <span class="font-display text-3xl text-rust">05</span>
+        <h3 class="font-display text-2xl leading-tight mt-3">Communication alignée à vos valeurs</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">On part toujours du « pourquoi ». Votre identité raconte ce qui vous rend unique, sans copier les codes attendus de votre secteur.</p>
+      </article>
+
+      <article class="card bg-ink text-cream">
+        <div class="icon-wrap-anim mb-6 bg-terracotta text-cream">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 18l7-9 5 5 6-8"/><path d="M22 6h-5M22 6v5"/></svg>
+        </div>
+        <span class="font-display text-3xl text-peach">06</span>
+        <h3 class="font-display text-2xl leading-tight mt-3">Un vrai retour sur investissement</h3>
+        <p class="text-cream/80 text-sm mt-3 leading-relaxed">Mes client·es constatent en moyenne +34 % de demandes entrantes dans les 6 mois suivant le lancement. La beauté, ça paie.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== GALERIE / PROJETS PHARES (IVORY BG) ============== -->
+<section class="bg-ivory py-24 md:py-32 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 reveal">
+      <div>
+        <span class="eyebrow accent"><span class="dot"></span> Réalisations phares</span>
+        <h2 class="font-display text-5xl md:text-7xl mt-6 leading-[1] word-reveal">
+          Des marques qu'on n'oublie <span class="font-italic-display text-terracotta-deep">pas</span>.
+        </h2>
+      </div>
+      <a href="projets.html" class="btn-outline text-ink self-start">
+        Tout voir le portfolio
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8m0 0L7 3m4 4L7 11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 reveal-stagger">
+      <a href="projets.html" data-tilt class="project-card md:col-span-7 h-[440px] mock-1">
+        <span class="badge">Identité complète</span>
+        <div class="cover absolute inset-0 flex items-end p-10 text-cream">
+          <div>
+            <div class="font-italic-display text-6xl md:text-7xl">Olivia</div>
+            <div class="text-xs uppercase tracking-[0.3em] mt-3 opacity-90">Boulangerie artisanale · Lyon</div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="meta absolute bottom-8 right-8 text-cream text-right">
+          <div class="font-display text-2xl">Voir l'étude de cas →</div>
+        </div>
+      </a>
+
+      <a href="projets.html" data-tilt class="project-card md:col-span-5 h-[440px] mock-2">
+        <span class="badge">Logo &amp; charte</span>
+        <div class="cover absolute inset-0 flex flex-col items-center justify-center text-cream p-8 text-center">
+          <div class="font-italic-display text-5xl">Noctua</div>
+          <div class="mt-3 text-xs uppercase tracking-[0.25em] opacity-70">Maison d'édition · Bordeaux</div>
+        </div>
+        <div class="overlay"></div>
+        <div class="meta absolute bottom-8 right-8 text-cream text-right">
+          <div class="font-display text-2xl">Voir →</div>
+        </div>
+      </a>
+
+      <a href="projets.html" data-tilt class="project-card md:col-span-4 h-[380px] mock-3">
+        <span class="badge">Carte menu</span>
+        <div class="cover absolute inset-0 flex items-end p-8 text-ink">
+          <div>
+            <div class="font-display text-4xl">Le Petit Sud</div>
+            <div class="text-xs uppercase tracking-[0.3em] mt-2 opacity-70">Bistrot · Marseille</div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="meta absolute bottom-8 right-8 text-cream"><div class="font-display text-xl">Voir →</div></div>
+      </a>
+
+      <a href="projets.html" data-tilt class="project-card md:col-span-4 h-[380px] mock-4">
+        <span class="badge">Packaging</span>
+        <div class="cover absolute inset-0 flex items-end p-8 text-ink">
+          <div>
+            <div class="font-italic-display text-4xl">Verveine</div>
+            <div class="text-xs uppercase tracking-[0.3em] mt-2 opacity-70">Herboristerie · Annecy</div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="meta absolute bottom-8 right-8 text-cream"><div class="font-display text-xl">Voir →</div></div>
+      </a>
+
+      <a href="projets.html" data-tilt class="project-card md:col-span-4 h-[380px] mock-6">
+        <span class="badge">Identité</span>
+        <div class="cover absolute inset-0 flex items-end p-8 text-cream">
+          <div>
+            <div class="font-display text-4xl">Atelier Aube</div>
+            <div class="text-xs uppercase tracking-[0.3em] mt-2 opacity-80">Cosmétique · Nantes</div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="meta absolute bottom-8 right-8 text-cream"><div class="font-display text-xl">Voir →</div></div>
+      </a>
+
+      <a href="projets.html" data-tilt class="project-card md:col-span-5 h-[400px] mock-7">
+        <span class="badge">Affiche</span>
+        <div class="cover absolute inset-0 flex items-end p-8 text-ink">
+          <div>
+            <div class="font-display text-4xl">Tessuto</div>
+            <div class="text-xs uppercase tracking-[0.3em] mt-2 opacity-70">Architecte d'intérieur · Milan</div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="meta absolute bottom-8 right-8 text-ink"><div class="font-display text-xl">Voir →</div></div>
+      </a>
+
+      <a href="projets.html" data-tilt class="project-card md:col-span-7 h-[400px] mock-8">
+        <span class="badge">Mockups</span>
+        <div class="cover absolute inset-0 flex items-end p-8 text-cream">
+          <div>
+            <div class="font-italic-display text-5xl">Café Mère</div>
+            <div class="text-xs uppercase tracking-[0.3em] mt-2 opacity-80">Torréfaction coopérative · Lille</div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="meta absolute bottom-8 right-8 text-cream"><div class="font-display text-2xl">Voir →</div></div>
+      </a>
+
+      <a href="projets.html" data-tilt class="project-card md:col-span-12 h-[280px] mock-10">
+        <span class="badge">Direction artistique</span>
+        <div class="cover absolute inset-0 flex items-center justify-center text-cream p-8 text-center">
+          <div>
+            <div class="font-italic-display text-6xl md:text-7xl">Solune</div>
+            <div class="text-xs uppercase tracking-[0.3em] mt-3 opacity-80">Bijouterie contemporaine · Genève</div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== QUI SUIS-JE ? (MIST BG) ============== -->
+<section class="bg-mist py-24 md:py-32 px-6 relative overflow-hidden">
+  <div class="blob -top-32 right-0 w-[460px] h-[460px] opacity-50" data-parallax="0.15" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#F5C3A1" d="M48,-58.5C61.2,-49.4,70.4,-32.8,72.5,-15.7C74.6,1.4,69.7,18.9,60.1,33.4C50.5,47.8,36.3,59.2,19.8,65.5C3.4,71.8,-15.3,73,-29.3,65.2C-43.4,57.3,-52.7,40.5,-59,22.7C-65.3,4.9,-68.5,-13.9,-62.3,-28.8C-56,-43.6,-40.4,-54.5,-24.4,-62.1C-8.5,-69.6,7.7,-73.9,22.6,-71.2C37.5,-68.5,51,-58.9,48,-58.5Z" transform="translate(100 100)"/></svg>
+  </div>
+  <div class="blob bottom-0 -left-20 w-[380px] h-[380px] opacity-50" data-parallax="0.2" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#A8B89E" d="M40,-58C52,-50,62,-37,68,-22C74,-7,76,10,69,24C62,38,46,49,30,57C14,64,-2,68,-18,64C-34,60,-49,49,-58,34C-67,19,-71,0,-67,-16C-63,-32,-50,-46,-35,-54C-19,-62,-2,-65,15,-65C32,-65,48,-66,40,-58Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 md:gap-16 items-center relative">
+
+    <!-- Portrait : remplacez le placeholder ci-dessous par <img src="assets/img/flavie.jpg" alt="Flavie, graphiste" class="absolute inset-0 w-full h-full object-cover"> -->
+    <div class="md:col-span-5 reveal">
+      <div class="relative max-w-md mx-auto">
+        <div data-tilt class="relative aspect-[4/5] rounded-[2rem] overflow-hidden bg-gradient-to-br from-peach via-clay to-terracotta shadow-[0_30px_80px_-30px_rgba(42,24,16,0.4)]">
+          <!-- Placeholder portrait : silhouette stylisée -->
+          <svg class="absolute inset-0 w-full h-full opacity-25" viewBox="0 0 200 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <circle cx="100" cy="90" r="42" fill="rgba(251,243,229,0.9)"/>
+            <path d="M30 250 Q30 160 100 155 Q170 160 170 250 Z" fill="rgba(251,243,229,0.9)"/>
+          </svg>
+          <div class="absolute top-6 left-6 text-cream/85 text-[10px] uppercase tracking-[0.3em]">Studio · Atelier</div>
+          <div class="absolute top-6 right-6 text-cream/85 text-[10px] uppercase tracking-[0.3em]">2026</div>
+          <div class="absolute bottom-6 left-6 right-6">
+            <div class="font-italic-display text-5xl text-cream leading-none">Flavie</div>
+            <div class="text-[11px] uppercase tracking-[0.25em] text-cream/80 mt-2">Graphiste · Paris</div>
+          </div>
+        </div>
+
+        <!-- Badge disponibilité -->
+        <div class="absolute -bottom-5 -right-5 w-28 h-28 md:w-32 md:h-32 rounded-full bg-moss text-cream flex flex-col items-center justify-center rotate-[8deg] shadow-[0_20px_40px_-10px_rgba(42,24,16,0.4)]">
+          <span class="font-italic-display text-2xl md:text-3xl leading-none">Disponible</span>
+          <span class="text-[9px] uppercase tracking-[0.2em] mt-1.5">Mars 2026</span>
+        </div>
+
+        <!-- Petit sticker décoratif -->
+        <div class="absolute -top-4 -left-4 w-20 h-20 rounded-full bg-cream border border-ink/10 flex items-center justify-center -rotate-12 shadow-[0_10px_30px_-10px_rgba(42,24,16,0.25)]">
+          <span class="font-italic-display text-2xl text-terracotta">★</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Texte -->
+    <div class="md:col-span-7 reveal" style="transition-delay:.1s">
+      <span class="eyebrow accent"><span class="dot"></span> Qui suis-je ?</span>
+      <h2 class="font-display text-5xl md:text-6xl leading-[1.05] mt-6 word-reveal">
+        Graphiste freelance, <span class="font-italic-display text-terracotta-deep">passionnée</span> depuis toujours.
+      </h2>
+
+      <div class="space-y-5 text-ink-soft text-lg leading-relaxed mt-8">
+        <p>
+          Je m'appelle <strong class="text-ink font-medium">Flavie</strong>. Diplômée des Arts Déco, j'ai d'abord fait mes armes en agence parisienne avant de me lancer en freelance pour pouvoir consacrer tout mon temps à un seul projet à la fois — le vôtre. J'accompagne aujourd'hui <strong class="text-ink font-medium">entrepreneurs, restaurateurs et marques de produits</strong> qui cherchent à construire une image qui leur ressemble vraiment — sans copier les tendances, sans céder aux modes.
+        </p>
+        <p>
+          Ce qui me passionne ? Le moment où l'on trouve <em class="font-italic-display">ensemble</em> le sens caché de votre marque. La typographie qui raconte une histoire en trois lettres. Un papier qui change tout. La fierté que vous ressentez quand un client vous dit « ouah ».
+        </p>
+      </div>
+
+      <!-- Mini stats -->
+      <div class="grid grid-cols-3 gap-6 mt-10 reveal-stagger">
+        <div>
+          <div class="font-display text-4xl md:text-5xl text-terracotta">60+</div>
+          <div class="text-xs uppercase tracking-[0.2em] text-ink-soft mt-2">Marques accompagnées</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl md:text-5xl text-terracotta">12</div>
+          <div class="text-xs uppercase tracking-[0.2em] text-ink-soft mt-2">Secteurs explorés</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl md:text-5xl text-terracotta">4</div>
+          <div class="text-xs uppercase tracking-[0.2em] text-ink-soft mt-2">Récompenses sectorielles</div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-3 items-center">
+        <a href="contact.html" class="btn-primary">
+          Faisons connaissance
+          <span class="icon-wrap"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+        </a>
+        <span class="text-sm text-ink-soft italic">— ou prenez un café virtuel avec moi sur la page <a href="rendez-vous.html" class="link-anim text-ink">réservation</a>.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SERVICES (PEACH BG) ============== -->
+<section class="bg-peach py-24 md:py-32 px-6 relative overflow-hidden">
+  <div class="blob bottom-0 -left-20 w-[400px] h-[400px] opacity-50" data-parallax="0.2" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#D67558" d="M44.7,-65.7C56.9,-58.4,65.1,-43.6,69.6,-28.4C74.1,-13.1,75,2.7,71.1,17.7C67.2,32.7,58.5,46.9,46.1,57.1C33.6,67.3,17.3,73.6,1.2,72C-14.8,70.4,-29.6,60.9,-43.6,50C-57.5,39,-70.6,26.6,-75,11.2C-79.5,-4.3,-75.4,-22.8,-65.6,-37.1C-55.7,-51.5,-40.1,-61.8,-24.7,-67.8C-9.3,-73.8,5.9,-75.5,20.5,-73.1C35,-70.6,48.9,-64.1,44.7,-65.7Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative">
+    <div class="grid md:grid-cols-12 gap-10 mb-16 items-end">
+      <div class="md:col-span-5 reveal">
+        <span class="eyebrow accent"><span class="dot"></span> Mes services</span>
+        <h2 class="font-display text-5xl md:text-7xl mt-6 leading-[1] word-reveal">
+          Ce que je fais, <span class="font-italic-display">précisément</span>.
+        </h2>
+      </div>
+      <p class="md:col-span-7 text-lg text-ink-soft self-end reveal">
+        Six prestations, toutes pensées comme des leviers d'attraction client.
+        Que vous lanciez votre activité ou rafraîchissiez une marque déjà installée,
+        on trouve ensemble la combinaison qui correspond à votre étape.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 reveal-stagger">
+      <article class="card bg-cream">
+        <div class="flex items-start gap-6">
+          <div class="icon-wrap-anim bg-terracotta text-cream shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a13 13 0 010 18M12 3a13 13 0 000 18"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-2xl">Logo &amp; symbole</h3>
+            <p class="text-ink-soft text-sm mt-2">3 directions créatives, signe principal, monogramme, déclinaisons couleurs et N&amp;B, fichiers vectoriels.</p>
+          </div>
+        </div>
+      </article>
+      <article class="card bg-cream">
+        <div class="flex items-start gap-6">
+          <div class="icon-wrap-anim bg-sage shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-2xl">Charte graphique</h3>
+            <p class="text-ink-soft text-sm mt-2">Le livre de règles de votre marque : palette, typographies, grilles, photographie, ton de voix, do &amp; don't.</p>
+          </div>
+        </div>
+      </article>
+      <article class="card bg-cream">
+        <div class="flex items-start gap-6">
+          <div class="icon-wrap-anim bg-mustard shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4h12l4 4v12H4z"/><path d="M4 12h16M12 4v16"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-2xl">Cartes de menu &amp; print</h3>
+            <p class="text-ink-soft text-sm mt-2">Menus, cartes, flyers, brochures, packaging. Conception graphique + suivi imprimeur, livraison prête à imprimer.</p>
+          </div>
+        </div>
+      </article>
+      <article class="card bg-cream">
+        <div class="flex items-start gap-6">
+          <div class="icon-wrap-anim bg-plum text-cream shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 9h18"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-2xl">Affiches &amp; campagnes</h3>
+            <p class="text-ink-soft text-sm mt-2">Affichage urbain, campagnes saisonnières, événementiel. Concept + déclinaisons formats imprimés et digitaux.</p>
+          </div>
+        </div>
+      </article>
+      <article class="card bg-cream">
+        <div class="flex items-start gap-6">
+          <div class="icon-wrap-anim bg-rose shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M10 18h4"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-2xl">Mockups &amp; mise en scène</h3>
+            <p class="text-ink-soft text-sm mt-2">Visuels photoréalistes pour présentations, réseaux sociaux et site. Votre marque, projetée dans la vie réelle.</p>
+          </div>
+        </div>
+      </article>
+      <article class="card bg-cream">
+        <div class="flex items-start gap-6">
+          <div class="icon-wrap-anim bg-ink text-cream shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-2xl">Direction artistique</h3>
+            <p class="text-ink-soft text-sm mt-2">Pour les marques qui veulent une vision cohérente sur le long terme : accompagnement mensuel, conseil, briefs.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROCESS TIMELINE (MUSTARD BG) ============== -->
+<section class="bg-mustard py-24 md:py-32 px-6 relative overflow-hidden">
+  <div class="blob top-0 right-0 w-[380px] h-[380px] opacity-40" data-parallax="0.15" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#2A1810" d="M44.7,-65.7C56.9,-58.4,65.1,-43.6,69.6,-28.4C74.1,-13.1,75,2.7,71.1,17.7C67.2,32.7,58.5,46.9,46.1,57.1C33.6,67.3,17.3,73.6,1.2,72C-14.8,70.4,-29.6,60.9,-43.6,50C-57.5,39,-70.6,26.6,-75,11.2C-79.5,-4.3,-75.4,-22.8,-65.6,-37.1C-55.7,-51.5,-40.1,-61.8,-24.7,-67.8C-9.3,-73.8,5.9,-75.5,20.5,-73.1C35,-70.6,48.9,-64.1,44.7,-65.7Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative">
+    <div class="grid md:grid-cols-12 gap-10 mb-20 items-end">
+      <div class="md:col-span-7 reveal">
+        <span class="eyebrow accent"><span class="dot"></span> Mon process</span>
+        <h2 class="font-display text-5xl md:text-7xl mt-6 leading-[1] word-reveal">
+          Quatre étapes, <span class="font-italic-display">zéro</span> surprise.
+        </h2>
+      </div>
+      <p class="md:col-span-5 text-ink-soft text-lg self-end reveal">
+        Une méthode éprouvée sur 60+ projets. Des points d'étape réguliers,
+        des livrables clairs. Vous savez à chaque instant où on en est.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-10 reveal-stagger">
+      <div class="timeline-step">
+        <span class="num">01</span>
+        <h3 class="font-display text-2xl mt-6">Découverte</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Appel de 30 min puis questionnaire stratégique. Je cerne votre marché, votre cible, votre singularité, vos blocages actuels.</p>
+        <span class="text-xs uppercase tracking-[0.25em] text-ink-soft mt-4 inline-block">Semaine 1</span>
+      </div>
+      <div class="timeline-step">
+        <span class="num">02</span>
+        <h3 class="font-display text-2xl mt-6">Stratégie</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Plateforme de marque, axes créatifs, moodboards, palettes et typographies. On valide la base avant de dessiner.</p>
+        <span class="text-xs uppercase tracking-[0.25em] text-ink-soft mt-4 inline-block">Semaines 2 → 3</span>
+      </div>
+      <div class="timeline-step">
+        <span class="num">03</span>
+        <h3 class="font-display text-2xl mt-6">Création</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Logo, système graphique, applications. Deux allers-retours inclus, vidéos pour expliquer chaque choix créatif.</p>
+        <span class="text-xs uppercase tracking-[0.25em] text-ink-soft mt-4 inline-block">Semaines 3 → 5</span>
+      </div>
+      <div class="timeline-step">
+        <span class="num">04</span>
+        <h3 class="font-display text-2xl mt-6">Lancement</h3>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Charte complète, fichiers source, kit réseaux sociaux, suivi imprimeur. Plus 30 jours de support post-livraison.</p>
+        <span class="text-xs uppercase tracking-[0.25em] text-ink-soft mt-4 inline-block">Semaine 6</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TÉMOIGNAGES (INK BG) ============== -->
+<section class="bg-ink py-24 md:py-32 px-6 relative overflow-hidden">
+  <div class="blob -top-40 left-1/3 w-[560px] h-[560px] opacity-30" data-parallax="0.1" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#D67558" d="M44.7,-65.7C56.9,-58.4,65.1,-43.6,69.6,-28.4C74.1,-13.1,75,2.7,71.1,17.7C67.2,32.7,58.5,46.9,46.1,57.1C33.6,67.3,17.3,73.6,1.2,72C-14.8,70.4,-29.6,60.9,-43.6,50C-57.5,39,-70.6,26.6,-75,11.2C-79.5,-4.3,-75.4,-22.8,-65.6,-37.1C-55.7,-51.5,-40.1,-61.8,-24.7,-67.8C-9.3,-73.8,5.9,-75.5,20.5,-73.1C35,-70.6,48.9,-64.1,44.7,-65.7Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative">
+    <div class="reveal mb-16">
+      <span class="eyebrow accent text-cream"><span class="dot"></span> Témoignages</span>
+      <h2 class="font-display text-5xl md:text-7xl mt-6 leading-[1] word-reveal">
+        Ce qu'iels en disent, <span class="font-italic-display text-peach">une fois lancé·es</span>.
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 reveal-stagger">
+      <figure class="rounded-3xl border border-cream/10 p-8 bg-cream/[0.04]">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="text-peach mb-6"><path d="M4 20c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8H4v-8zm12 0c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8h-8v-8z" fill="currentColor"/></svg>
+        <blockquote class="font-display text-2xl leading-snug">« En trois mois, j'ai doublé mon panier moyen. Mes clients me prennent enfin au sérieux. »</blockquote>
+        <figcaption class="mt-8 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-peach to-terracotta"></div>
+          <div>
+            <div class="font-medium">Camille Bertin</div>
+            <div class="text-xs text-cream/60">Fondatrice — Olivia Boulangerie</div>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="rounded-3xl border border-cream/10 p-8 bg-cream/[0.04]">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="text-peach mb-6"><path d="M4 20c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8H4v-8zm12 0c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8h-8v-8z" fill="currentColor"/></svg>
+        <blockquote class="font-display text-2xl leading-snug">« Flavie a compris l'âme du restaurant en un seul rendez-vous. Le résultat est exactement nous, en mieux. »</blockquote>
+        <figcaption class="mt-8 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-mustard to-sage"></div>
+          <div>
+            <div class="font-medium">Théo Marquez</div>
+            <div class="text-xs text-cream/60">Chef — Le Petit Sud</div>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="rounded-3xl border border-cream/10 p-8 bg-cream/[0.04]">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="text-peach mb-6"><path d="M4 20c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8H4v-8zm12 0c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8h-8v-8z" fill="currentColor"/></svg>
+        <blockquote class="font-display text-2xl leading-snug">« Un travail extrêmement précis, une vraie posture de conseil. On n'a pas eu une seule retouche à demander. »</blockquote>
+        <figcaption class="mt-8 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-sage to-rose"></div>
+          <div>
+            <div class="font-medium">Inès Charpentier</div>
+            <div class="text-xs text-cream/60">Co-fondatrice — Verveine</div>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="rounded-3xl border border-cream/10 p-8 bg-cream/[0.04] md:col-start-2">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="text-peach mb-6"><path d="M4 20c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8H4v-8zm12 0c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8h-8v-8z" fill="currentColor"/></svg>
+        <blockquote class="font-display text-2xl leading-snug">« Le ROI le plus rapide qu'on ait fait. Notre image projette enfin notre niveau d'exigence. »</blockquote>
+        <figcaption class="mt-8 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-rose to-plum"></div>
+          <div>
+            <div class="font-medium">Léa Vaugier</div>
+            <div class="text-xs text-cream/60">Directrice — Atelier Aube</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FINAL CTA (CREAM BG with peach blob) ============== -->
+<section class="bg-cream py-24 md:py-40 px-6 relative overflow-hidden">
+  <div class="blob top-0 left-1/4 w-[600px] h-[600px] opacity-50" data-parallax="0.15" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#F5C3A1" d="M48,-58.5C61.2,-49.4,70.4,-32.8,72.5,-15.7C74.6,1.4,69.7,18.9,60.1,33.4C50.5,47.8,36.3,59.2,19.8,65.5C3.4,71.8,-15.3,73,-29.3,65.2C-43.4,57.3,-52.7,40.5,-59,22.7C-65.3,4.9,-68.5,-13.9,-62.3,-28.8C-56,-43.6,-40.4,-54.5,-24.4,-62.1C-8.5,-69.6,7.7,-73.9,22.6,-71.2C37.5,-68.5,51,-58.9,48,-58.5Z" transform="translate(100 100)"/></svg>
+  </div>
+  <div class="max-w-5xl mx-auto text-center relative reveal">
+    <span class="eyebrow accent"><span class="dot"></span> Prochaine étape</span>
+    <h2 class="huge mt-8 word-reveal">On en <span class="font-italic-display text-terracotta-deep">parle</span> ?</h2>
+    <p class="text-lg text-ink-soft mt-8 max-w-xl mx-auto">
+      30 minutes, sans engagement, gratuit. On regarde où en est votre marque,
+      ce qui la freine, et si on est faits pour bosser ensemble.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-3 justify-center">
+      <a href="rendez-vous.html" class="btn-accent">
+        Réserver mon créneau
+        <span class="icon-wrap"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+      </a>
+      <a href="contact.html" class="btn-outline text-ink">Écrire un message</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============== FOOTER ============== -->
+<footer class="bg-ink text-cream pt-24 pb-10 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10 pb-16 border-b border-cream/10">
+      <div class="md:col-span-5">
+        <h2 class="font-display text-5xl md:text-6xl leading-tight">Studio <span class="font-italic-display text-peach">Flavie</span></h2>
+        <p class="text-cream/70 mt-4 max-w-sm">Identités visuelles pour entrepreneurs, restaurateurs et créateur·ices qui veulent qu'on les remarque pour les bonnes raisons.</p>
+      </div>
+      <div class="md:col-span-3">
+        <div class="text-xs uppercase tracking-[0.25em] text-cream/40 mb-4">Naviguer</div>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="link-anim">Accueil</a></li>
+          <li><a href="projets.html" class="link-anim">Projets</a></li>
+          <li><a href="tarifs.html" class="link-anim">Tarifs</a></li>
+          <li><a href="contact.html" class="link-anim">Contact</a></li>
+          <li><a href="rendez-vous.html" class="link-anim">Réserver</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <div class="text-xs uppercase tracking-[0.25em] text-cream/40 mb-4">Contact</div>
+        <ul class="space-y-2">
+          <li><a href="mailto:bonjour@studio-flavie.fr" class="link-anim">bonjour@studio-flavie.fr</a></li>
+          <li><a href="tel:+33612345678" class="link-anim">+33 6 12 34 56 78</a></li>
+          <li class="text-cream/60">Paris, France · Travail à distance</li>
+        </ul>
+        <div class="flex gap-3 mt-6">
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Behance"><span class="text-xs font-bold">Bē</span></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="LinkedIn"><span class="text-xs font-bold">in</span></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Pinterest"><span class="text-xs font-bold">P</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-cream/50">
+      <div>© <span data-year></span> Studio Flavie · Tous droits réservés.</div>
+      <div class="flex gap-6"><a href="#" class="link-anim">Mentions légales</a><a href="#" class="link-anim">Politique de confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts: GSAP + ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

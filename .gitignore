@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Dépendances Node (au cas où vous ajoutez Tailwind CLI plus tard)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.orig

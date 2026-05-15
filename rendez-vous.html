@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Réserver un appel — Studio Flavie · 30 min, gratuit, sans engagement</title>
+<meta name="description" content="Réservez un appel découverte gratuit de 30 minutes avec Flavie. On regarde ensemble où en est votre marque et si on est faits pour travailler ensemble. Sans engagement." />
+<meta property="og:title" content="Réserver un appel — Studio Flavie" />
+<meta property="og:description" content="Appel découverte gratuit, 30 min, sans engagement. Calendrier interactif." />
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+<link rel="canonical" href="https://studio-flavie.fr/rendez-vous.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { cream:'#FBF3E5', ivory:'#F4E8D0', peach:'#F5C3A1', terracotta:'#D67558','terracotta-deep':'#B85838', rust:'#A8482F', sand:'#E0CFB3', bronze:'#B89878', clay:'#C9A98A', mustard:'#E0CFB3', gold:'#B89878', sage:'#B5BFA9','sage-deep':'#8A9784', plum:'#7A5C4C', taupe:'#7A5C4C', ink:'#2A1810','ink-soft':'#5C4434','ink-muted':'#8C7461', rose:'#E89A8F' },
+    fontFamily: { display:['Fraunces','serif'], body:['"DM Sans"','system-ui','sans-serif'] }
+  }}}
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="grain bg-cream text-ink font-body">
+
+<header class="fixed top-0 inset-x-0 z-40 flex justify-center pt-6 px-4">
+  <div class="nav-island rounded-full flex items-center justify-between gap-2 pl-6 pr-2 py-2 w-full max-w-4xl">
+    <a href="index.html" class="font-display text-lg tracking-tight flex items-center gap-2 shrink-0">
+      <span class="w-7 h-7 rounded-full bg-terracotta flex items-center justify-center text-cream font-italic-display text-base">F</span>
+      Studio <span class="font-italic-display">Flavie</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1 text-sm" aria-label="Navigation principale">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="tarifs.html" class="nav-link">Tarifs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="rendez-vous.html" class="btn-accent text-sm hidden sm:inline-flex">
+      Réserver
+      <span class="icon-wrap"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+    </a>
+    <button id="burger" class="md:hidden w-10 h-10 rounded-full border border-ink/20 flex items-center justify-center" aria-label="Ouvrir le menu"><span class="hamburger"><span></span><span></span><span></span></span></button>
+  </div>
+</header>
+
+<div id="menu-overlay" class="menu-overlay flex items-center justify-center" aria-hidden="true">
+  <nav class="text-center space-y-6">
+    <a href="index.html" class="block font-display text-5xl">Accueil</a>
+    <a href="projets.html" class="block font-display text-5xl italic">Projets</a>
+    <a href="tarifs.html" class="block font-display text-5xl">Tarifs</a>
+    <a href="contact.html" class="block font-display text-5xl italic">Contact</a>
+    <a href="rendez-vous.html" class="block font-display text-5xl">Réserver →</a>
+  </nav>
+</div>
+
+<main>
+
+<!-- HERO (CREAM with blobs) -->
+<section class="pt-40 pb-16 px-6 relative overflow-hidden bg-cream">
+  <div class="blob -top-32 -right-20 w-[500px] h-[500px] opacity-60" data-parallax="0.15" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#F5C3A1" d="M48,-58.5C61.2,-49.4,70.4,-32.8,72.5,-15.7C74.6,1.4,69.7,18.9,60.1,33.4C50.5,47.8,36.3,59.2,19.8,65.5C3.4,71.8,-15.3,73,-29.3,65.2C-43.4,57.3,-52.7,40.5,-59,22.7C-65.3,4.9,-68.5,-13.9,-62.3,-28.8C-56,-43.6,-40.4,-54.5,-24.4,-62.1C-8.5,-69.6,7.7,-73.9,22.6,-71.2C37.5,-68.5,51,-58.9,48,-58.5Z" transform="translate(100 100)"/></svg>
+  </div>
+  <div class="blob top-40 -left-20 w-[380px] h-[380px] opacity-40" data-parallax="0.2" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#E5B85C" d="M40,-58C52,-50,62,-37,68,-22C74,-7,76,10,69,24C62,38,46,49,30,57C14,64,-2,68,-18,64C-34,60,-49,49,-58,34C-67,19,-71,0,-67,-16C-63,-32,-50,-46,-35,-54C-19,-62,-2,-65,15,-65C32,-65,48,-66,40,-58Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 items-end relative">
+    <div class="md:col-span-7 reveal">
+      <span class="eyebrow accent"><span class="dot"></span> Appel découverte · 30 min</span>
+      <h1 class="font-display text-[clamp(3rem,8vw,7.5rem)] leading-[0.93] tracking-[-0.04em] mt-8 word-reveal">
+        On se parle ? <span class="font-italic-display text-terracotta-deep">Trente minutes</span> pour y voir clair.
+      </h1>
+    </div>
+    <div class="md:col-span-5 space-y-4 reveal" style="transition-delay:.1s">
+      <div class="flex items-center gap-3 px-5 py-3 rounded-full bg-ink text-cream w-max">
+        <span class="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
+        <span class="text-sm">100 % gratuit · sans engagement</span>
+      </div>
+      <p class="text-lg text-ink-soft">Un échange direct, en visio ou par téléphone, pour comprendre où en est votre marque, ce qui la freine, et si on est faits pour travailler ensemble. Aucun argumentaire de vente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM (IVORY) -->
+<section class="px-6 py-20 bg-ivory">
+  <div class="max-w-7xl mx-auto reveal">
+    <article class="bg-cream rounded-[2rem] p-8 md:p-14 shadow-[0_30px_80px_-40px_rgba(42,24,16,0.3)]">
+      <div class="grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-4">
+          <span class="eyebrow accent"><span class="dot"></span> Programme</span>
+          <h2 class="font-display text-4xl md:text-5xl mt-6 leading-tight word-reveal">Ce qu'on va aborder <span class="font-italic-display text-terracotta-deep">ensemble</span>.</h2>
+        </div>
+        <ul class="md:col-span-8 space-y-1 reveal-stagger">
+          <li class="flex gap-5 py-4 border-t border-ink/10">
+            <span class="font-italic-display text-3xl text-terracotta w-12">01</span>
+            <div>
+              <div class="font-display text-2xl">Votre activité, votre cible</div>
+              <p class="text-ink-soft text-sm mt-1">Qui sont vos clients, à quel moment ils décident, ce qui fait qu'ils vous choisissent (ou pas).</p>
+            </div>
+          </li>
+          <li class="flex gap-5 py-4 border-t border-ink/10">
+            <span class="font-italic-display text-3xl text-terracotta w-12">02</span>
+            <div>
+              <div class="font-display text-2xl">L'état actuel de votre image</div>
+              <p class="text-ink-soft text-sm mt-1">Mini-audit live : ce qui fonctionne déjà, ce qui freine, les premiers angles morts à corriger.</p>
+            </div>
+          </li>
+          <li class="flex gap-5 py-4 border-t border-ink/10">
+            <span class="font-italic-display text-3xl text-terracotta w-12">03</span>
+            <div>
+              <div class="font-display text-2xl">Vos objectifs et contraintes</div>
+              <p class="text-ink-soft text-sm mt-1">Où vous voulez aller dans les 12 mois, votre budget, vos délais, vos non-négociables.</p>
+            </div>
+          </li>
+          <li class="flex gap-5 py-4 border-t border-ink/10">
+            <span class="font-italic-display text-3xl text-terracotta w-12">04</span>
+            <div>
+              <div class="font-display text-2xl">La piste la plus pertinente</div>
+              <p class="text-ink-soft text-sm mt-1">Je vous oriente vers la formule qui colle — même si la réponse est « ça n'est pas pour nous, voici qui pourrait mieux vous aider ».</p>
+            </div>
+          </li>
+          <li class="flex gap-5 py-4 border-t border-b border-ink/10">
+            <span class="font-italic-display text-3xl text-terracotta w-12">05</span>
+            <div>
+              <div class="font-display text-2xl">Les prochaines étapes</div>
+              <p class="text-ink-soft text-sm mt-1">Si on continue, je vous envoie une proposition chiffrée sous 48h. Sinon, vous repartez avec des pistes concrètes.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CALENDAR + FORM (PEACH) -->
+<section class="px-6 py-20 bg-peach relative overflow-hidden">
+  <div class="blob top-10 right-1/3 w-[400px] h-[400px] opacity-50" data-parallax="0.15" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#FBF3E5" d="M44.7,-65.7C56.9,-58.4,65.1,-43.6,69.6,-28.4C74.1,-13.1,75,2.7,71.1,17.7C67.2,32.7,58.5,46.9,46.1,57.1C33.6,67.3,17.3,73.6,1.2,72C-14.8,70.4,-29.6,60.9,-43.6,50C-57.5,39,-70.6,26.6,-75,11.2C-79.5,-4.3,-75.4,-22.8,-65.6,-37.1C-55.7,-51.5,-40.1,-61.8,-24.7,-67.8C-9.3,-73.8,5.9,-75.5,20.5,-73.1C35,-70.6,48.9,-64.1,44.7,-65.7Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-5 reveal relative">
+
+    <!-- Calendar -->
+    <div class="md:col-span-7 bg-cream rounded-[2rem] p-8 md:p-10">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <span class="eyebrow accent"><span class="dot"></span> Étape 1 / 2</span>
+          <h3 class="font-display text-3xl mt-3">Choisissez votre créneau</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="cal-prev" class="w-10 h-10 rounded-full border border-ink/20 flex items-center justify-center hover:bg-ink hover:text-cream transition" aria-label="Mois précédent">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </button>
+          <button id="cal-next" class="w-10 h-10 rounded-full border border-ink/20 flex items-center justify-center hover:bg-ink hover:text-cream transition" aria-label="Mois suivant">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 2l5 5-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="font-display text-2xl mb-4" id="cal-month">—</div>
+      <div id="cal-grid" class="grid grid-cols-7 gap-1"></div>
+
+      <div class="mt-8">
+        <div class="text-xs uppercase tracking-[0.25em] text-ink-muted mb-4">Créneaux disponibles (Europe / Paris)</div>
+        <div id="slots" class="grid grid-cols-2 md:grid-cols-4 gap-3 opacity-30 transition-opacity duration-500">
+          <button class="slot">09:00</button>
+          <button class="slot">10:00</button>
+          <button class="slot">11:30</button>
+          <button class="slot">14:00</button>
+          <button class="slot">15:30</button>
+          <button class="slot">16:30</button>
+          <button class="slot">17:30</button>
+          <button class="slot">18:30</button>
+        </div>
+        <p class="text-xs text-ink-muted mt-4">Sélectionnez un jour pour voir mes disponibilités.</p>
+      </div>
+    </div>
+
+    <!-- Pre-call form -->
+    <div class="md:col-span-5 bg-cream rounded-[2rem] p-8 md:p-10">
+      <span class="eyebrow accent"><span class="dot"></span> Étape 2 / 2</span>
+      <h3 class="font-display text-3xl mt-3">Infos avant l'appel</h3>
+      <p class="text-ink-soft text-sm mt-2">Pour que je prépare notre échange et qu'on n'utilise pas les 30 minutes à se présenter.</p>
+
+      <form data-mock class="space-y-6 mt-8">
+        <label class="block">
+          <span class="field-label block mb-1">Prénom &amp; nom</span>
+          <input type="text" required class="field" placeholder="Camille Bertin">
+        </label>
+        <label class="block">
+          <span class="field-label block mb-1">Email</span>
+          <input type="email" required class="field" placeholder="camille@maison-olivia.fr">
+        </label>
+        <label class="block">
+          <span class="field-label block mb-1">Téléphone</span>
+          <input type="tel" class="field" placeholder="+33 6 12 34 56 78">
+        </label>
+        <label class="block">
+          <span class="field-label block mb-1">En deux phrases, votre projet</span>
+          <textarea required class="field" rows="4" placeholder="Ex : je relance ma boulangerie après 12 ans et j'aimerais une identité qui parle d'artisanat sans cliché."></textarea>
+        </label>
+        <fieldset>
+          <legend class="field-label block mb-2">Format préféré</legend>
+          <div class="flex flex-wrap gap-2">
+            <label class="chip cursor-pointer"><input type="radio" name="format" class="sr-only" checked> Visio (Google Meet)</label>
+            <label class="chip cursor-pointer"><input type="radio" name="format" class="sr-only"> Téléphone</label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-accent w-full justify-center">
+          Confirmer mon rendez-vous
+          <span class="icon-wrap"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+        </button>
+
+        <div data-feedback class="hidden mt-4 p-4 rounded-2xl bg-sage/30 text-ink text-sm border border-sage"></div>
+
+        <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs text-ink-muted pt-2">
+          <span class="flex items-center gap-2"><span class="text-terracotta">✓</span> Sans engagement</span>
+          <span class="flex items-center gap-2"><span class="text-terracotta">✓</span> 100 % gratuit</span>
+          <span class="flex items-center gap-2"><span class="text-terracotta">✓</span> 30 min max</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- REASSURANCE (INK) -->
+<section class="py-24 md:py-32 px-6 bg-ink text-cream relative overflow-hidden">
+  <div class="blob -top-40 right-1/4 w-[520px] h-[520px] opacity-30" data-parallax="0.1" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><path fill="#D67558" d="M44.7,-65.7C56.9,-58.4,65.1,-43.6,69.6,-28.4C74.1,-13.1,75,2.7,71.1,17.7C67.2,32.7,58.5,46.9,46.1,57.1C33.6,67.3,17.3,73.6,1.2,72C-14.8,70.4,-29.6,60.9,-43.6,50C-57.5,39,-70.6,26.6,-75,11.2C-79.5,-4.3,-75.4,-22.8,-65.6,-37.1C-55.7,-51.5,-40.1,-61.8,-24.7,-67.8C-9.3,-73.8,5.9,-75.5,20.5,-73.1C35,-70.6,48.9,-64.1,44.7,-65.7Z" transform="translate(100 100)"/></svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative">
+    <div class="grid md:grid-cols-12 gap-10 items-end mb-16 reveal">
+      <div class="md:col-span-7">
+        <span class="eyebrow accent text-cream"><span class="dot"></span> Sans pression</span>
+        <h2 class="font-display text-5xl md:text-7xl mt-6 leading-[1] word-reveal">Pourquoi cet appel, <span class="font-italic-display text-peach">vraiment</span> ?</h2>
+      </div>
+      <p class="md:col-span-5 text-cream/70 text-lg">Je pourrais vous envoyer un devis sans appel. Mais l'expérience m'a appris qu'une marque qui se construit sans alignement humain au départ tient rarement la route. Trente minutes, c'est court. C'est suffisant.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 reveal-stagger">
+      <article class="rounded-3xl border border-cream/10 p-8 bg-cream/[0.04]">
+        <div class="font-display text-6xl text-peach">87%</div>
+        <p class="text-cream/80 mt-4">des projets démarrés après un appel découverte sont livrés sans dépasser ni le budget ni les délais.</p>
+      </article>
+      <article class="rounded-3xl border border-cream/10 p-8 bg-cream/[0.04]">
+        <div class="font-display text-6xl text-peach">30 min</div>
+        <p class="text-cream/80 mt-4">c'est exactement ce qu'il me faut pour comprendre votre projet et ce qu'il vous faut pour me jauger.</p>
+      </article>
+      <article class="rounded-3xl border border-cream/10 p-8 bg-cream/[0.04]">
+        <div class="font-display text-6xl text-peach">0 €</div>
+        <p class="text-cream/80 mt-4">aucune facturation, aucun engagement, aucune relance commerciale derrière. Promis.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL TESTIMONIAL -->
+<section class="py-24 px-6 bg-cream">
+  <div class="max-w-4xl mx-auto text-center reveal">
+    <svg width="40" height="40" viewBox="0 0 32 32" fill="none" class="text-terracotta mx-auto mb-6"><path d="M4 20c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8H4v-8zm12 0c0-6 4-10 8-10v4c-3 0-5 3-5 6h5v8h-8v-8z" fill="currentColor"/></svg>
+    <p class="font-display text-3xl md:text-4xl leading-snug word-reveal">« J'avais peur d'un énième appel commercial. J'ai eu une vraie conversation, des conseils utiles même si je n'avais pas signé ensuite. Évidemment j'ai signé. »</p>
+    <div class="mt-8 text-sm text-ink-soft">Anaïs Brun · Fondatrice, Brace Studio</div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-ink text-cream pt-24 pb-10 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10 pb-16 border-b border-cream/10">
+      <div class="md:col-span-5"><h2 class="font-display text-5xl md:text-6xl leading-tight">Studio <span class="font-italic-display text-peach">Flavie</span></h2><p class="text-cream/70 mt-4 max-w-sm">Identités visuelles pour entrepreneurs, restaurateurs et créateur·ices qui veulent qu'on les remarque pour les bonnes raisons.</p></div>
+      <div class="md:col-span-3"><div class="text-xs uppercase tracking-[0.25em] text-cream/40 mb-4">Naviguer</div><ul class="space-y-2"><li><a href="index.html" class="link-anim">Accueil</a></li><li><a href="projets.html" class="link-anim">Projets</a></li><li><a href="tarifs.html" class="link-anim">Tarifs</a></li><li><a href="contact.html" class="link-anim">Contact</a></li><li><a href="rendez-vous.html" class="link-anim">Réserver</a></li></ul></div>
+      <div class="md:col-span-4"><div class="text-xs uppercase tracking-[0.25em] text-cream/40 mb-4">Contact</div><ul class="space-y-2"><li><a href="mailto:bonjour@studio-flavie.fr" class="link-anim">bonjour@studio-flavie.fr</a></li><li><a href="tel:+33612345678" class="link-anim">+33 6 12 34 56 78</a></li><li class="text-cream/60">Paris, France · Travail à distance</li></ul>
+        <div class="flex gap-3 mt-6">
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Behance"><span class="text-xs font-bold">Bē</span></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="LinkedIn"><span class="text-xs font-bold">in</span></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream hover:text-ink transition" aria-label="Pinterest"><span class="text-xs font-bold">P</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs text-cream/50"><div>© <span data-year></span> Studio Flavie · Tous droits réservés.</div><div class="flex gap-6"><a href="#" class="link-anim">Mentions légales</a><a href="#" class="link-anim">Politique de confidentialité</a></div></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
