@@ -215,7 +215,12 @@ function initProjectModal() {
     briefEl.textContent = data.brief;
     solutionEl.textContent = data.solution;
     resultsEl.textContent = data.results;
-    galleryEl.innerHTML = data.images.map(c => `<div class="aspect-[4/5] rounded-2xl ${c}"></div>`).join('');
+    galleryEl.innerHTML = data.images.map(c => {
+      if (/\.(jpe?g|png|webp|svg|avif)$/i.test(c)) {
+        return `<img src="${c}" alt="" loading="lazy" class="aspect-[4/5] w-full rounded-2xl object-cover bg-paper">`;
+      }
+      return `<div class="aspect-[4/5] rounded-2xl ${c}"></div>`;
+    }).join('');
     modal.classList.add('is-open');
     document.body.classList.add('no-scroll');
   }));
